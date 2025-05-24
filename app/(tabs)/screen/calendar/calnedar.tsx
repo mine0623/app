@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleSheet } from 'react-native';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 
 function Calendar() {      
@@ -8,11 +9,6 @@ function Calendar() {
       <Text>2025년 5월 6일</Text>
     
       <TouchableOpacity>5.12 ~ 5.16</TouchableOpacity>
-
-      {/* <View>
-
-      </View> */}
-
     </SafeAreaView>
   );
 }
