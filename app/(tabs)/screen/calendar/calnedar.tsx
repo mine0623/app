@@ -8,13 +8,10 @@ function Calendar() {
       <Text>2025년 5월 6일</Text>
     
       <TouchableOpacity>5.12 ~ 5.16</TouchableOpacity>
-      <TouchableOpacity>
-        <></>
-      </TouchableOpacity>
 
-      <View>
+      {/* <View>
 
-      </View>
+      </View> */}
 
     </SafeAreaView>
   );
