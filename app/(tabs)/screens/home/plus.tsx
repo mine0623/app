@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { View, Text, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, SafeAreaView, TouchableWithoutFeedback, Keyboard} from 'react-native';
 
 function Plus() {      
   return (
@@ -72,8 +72,10 @@ function Plus() {
           <Text style={styles.img}>사진 첨부</Text>
         </TouchableOpacity>
       </View>
-
-      <TextInput style={styles.input} placeholder="내용을 입력하세요"></TextInput>
+      
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <TextInput style={styles.input} placeholder="내용을 입력하세요"></TextInput>
+      </TouchableWithoutFeedback>
 
       <TouchableOpacity><Text style={styles.button}>+</Text></TouchableOpacity>
         
